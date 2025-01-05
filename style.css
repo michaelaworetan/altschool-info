@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: rgba(19, 135, 230, 0.952);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: #f4f4f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #0078d7;
+}
+
+section img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(19, 135, 230, 0.952);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: #f4f4f9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* List Styles */
+ol {
+    margin: 10px 0 0 20px;
+}
+
+ol li {
+    margin: 5px 0;
+}
+
+[tabindex] {
+    outline: 2px solid #0078d7;
+    outline-offset: 2px;
+}
