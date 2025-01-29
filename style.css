@@ -1,5 +1,8 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -7,43 +10,55 @@ body {
     color: #333;
 }
 
+/* Main Content */
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 750px;
+    margin: 20px auto;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 header {
     background: rgba(19, 135, 230, 0.952);
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
+/* Navigation */
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 5px;
 }
 
 header nav ul li a {
     color: #f4f4f9;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.2);
 }
 
+/* Sections */
 section {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 15px;
     background: #e9ecef;
     border-radius: 8px;
 }
@@ -56,11 +71,11 @@ section img {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: 10px auto;
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
@@ -89,7 +104,61 @@ ol li {
     margin: 5px 0;
 }
 
+/* Accessibility */
 [tabindex] {
     outline: 2px solid #0078d7;
     outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 8px;
+    }
 }
