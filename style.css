@@ -67,6 +67,10 @@ section h2 {
     color: #0078d7;
 }
 
+section p {
+    text-align: justify;
+}
+
 section img {
     max-width: 200px;
     height: auto;
